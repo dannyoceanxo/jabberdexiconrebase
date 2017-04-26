@@ -1,13 +1,27 @@
-@import 'utility';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-text-size: 12px;
+$base-font-family: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
 
 html {
-  @include full-height;
+  height: 100%;
+
+  body,
+  #root,
+  .App {
+    min-height: 100%;
+  }
 }
 
 body {
   margin: 0;
-  font: $base-text-size / 1 $base-font-family;
+  font-size: $base-text-size;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  color: #111;
+  background-color: #fff;
 }
